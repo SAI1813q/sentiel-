@@ -32,22 +32,20 @@
     <h1>Home Security Operations Center (SOC) in Microsoft Azure</h1>
     <p class="lead">Hands-on SOC built in Azure using a honeypot VM, Log Analytics and Microsoft Sentinel for real-world attack monitoring and KQL-based threat hunting.</p>
 
-    <div class="meta">
+<div class="meta">
       <span class="badge">Azure</span>
       <span class="badge">Microsoft Sentinel</span>
       <span class="badge">KQL</span>
       <span class="badge">Cloud Security</span>
       <span class="badge">Threat Hunting</span>
     </div>
-
-    <div class="grid">
+  <div class="grid">
       <div>
         <div class="card section">
           <h2>Project Summary</h2>
           <p>I designed and implemented a home SOC in Microsoft Azure. The deployment uses a Windows honeypot VM with exposed RDP to attract automated attack traffic. Events are shipped to a Log Analytics Workspace and analyzed in Microsoft Sentinel using custom Kusto queries.</p>
         </div>
-
-        <div class="card section">
+    <div class="card section">
           <h2>Demo Video</h2>
           <div class="yt">
             <!-- Embedded YouTube: change video ID if needed -->
@@ -56,7 +54,7 @@
           <p class="small">Tip: add an explicit timestamp in the README (e.g., "0:45–2:10 shows the attack walkthrough").</p>
         </div>
 
-        <div class="card section">
+   <div class="card section">
           <h2>Objectives</h2>
           <ul>
             <li>Deploy a honeypot VM in Azure and expose RDP/SSH to capture attacker telemetry.</li>
@@ -66,7 +64,7 @@
           </ul>
         </div>
 
-        <div class="card section">
+   <div class="card section">
           <h2>Architecture</h2>
           <pre><code>[Global Attackers]
       ↓
@@ -79,7 +77,7 @@
 [KQL Analysis & Dashboards]</code></pre>
         </div>
 
-        <div class="card section">
+   <div class="card section">
           <h2>Key Findings</h2>
           <ul>
             <li>Honeypot received hundreds of automated RDP brute-force attempts within hours.</li>
@@ -88,8 +86,7 @@
             <li>Attack spikes align with global active hours of several time zones.</li>
           </ul>
         </div>
-
-        <div class="card section">
+    <div class="card section">
           <h2>KQL Examples</h2>
           <pre><code>// Failed RDP Logins
 SecurityEvent
@@ -110,8 +107,7 @@ SecurityEvent
 | sort by count_ desc</code></pre>
           <p class="small">Tip: tweak EventID filters to your VM OS and audit settings.</p>
         </div>
-
-        <div class="card section">
+     <div class="card section">
           <h2>Results & Observations</h2>
           <ul>
             <li>High volume of automated scans — indicates mass automated tooling.</li>
@@ -119,8 +115,7 @@ SecurityEvent
             <li>Sentinel correlation rules simplified triage and visualization.</li>
           </ul>
         </div>
-
-        <div class="card section">
+    <div class="card section">
           <h2>Future Work</h2>
           <ul>
             <li>Automate alerts using Azure Logic Apps for playbook execution.</li>
@@ -129,10 +124,9 @@ SecurityEvent
             <li>Integrate threat intel for automated IP enrichment and scoring.</li>
           </ul>
         </div>
+   </div>
 
-      </div>
-
-      <aside>
+  <aside>
         <div class="card section">
           <h3>Tech Stack</h3>
           <ul>
@@ -144,7 +138,7 @@ SecurityEvent
           </ul>
         </div>
 
-        <div class="card section">
+  <div class="card section">
           <h3>Repository Structure</h3>
           <div class="file-structure">
             <pre><code>.
@@ -155,8 +149,7 @@ SecurityEvent
 └── LICENSE</code></pre>
           </div>
         </div>
-
-        <div class="card section">
+    <div class="card section">
           <h3>How to Reproduce</h3>
           <ol>
             <li>Create a Resource Group in Azure.</li>
@@ -168,21 +161,20 @@ SecurityEvent
           <p class="small">Security note: deploy honeypots in isolated subscriptions and never use credentials you care about.</p>
         </div>
 
-        <div class="card section">
+   <div class="card section">
           <h3>Screenshots (placeholder)</h3>
           <p class="small">Add screenshots to <code>/images</code> and reference them here:</p>
           <pre><code>&lt;img src="images/sentinel-dashboard.png" alt="Sentinel dashboard" /&gt;</code></pre>
         </div>
 
-        <div class="card section">
+  <div class="card section">
           <h3>Author</h3>
           <p><strong>Sai</strong> — Cybersecurity Student<br/><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
         </div>
 
-      </aside>
+   </aside>
     </div>
-
-    <div class="footer">
+  <div class="footer">
       <div class="small">License: MIT (optional) • Replace placeholders with your screenshots and results.</div>
       <div class="small">Generated: Home SOC README • Copy & paste into your repo as <code>README.html</code></div>
     </div>
@@ -190,3 +182,4 @@ SecurityEvent
   </div>
 </body>
 </html>
+
